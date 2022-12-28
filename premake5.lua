@@ -11,7 +11,7 @@ project "CppFeatures"
     cppdialect "c++20"
     targetdir "bin/%{cfg.buildcfg}"
 
-    files { "src/**.h", "src/**.cpp" }
+    files { "src/**.hpp", "src/**.h", "src/**.cpp" }
 
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")

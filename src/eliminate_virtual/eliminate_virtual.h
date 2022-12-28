@@ -182,7 +182,7 @@ namespace case_nvirtual
     public:
         template <same_as_any<TFoos...> T>
         void store(T value) {
-            return std::get<std::vector<T>>(m_data).push_bach(value);
+            return std::get<std::vector<T>>(m_data).push_back(value);
         }
     private:
         std::tuple<std::vector<TFoos>...> m_data;
